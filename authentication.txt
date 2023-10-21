@@ -1,0 +1,12 @@
+POST /user/login
+{
+    "email": string,
+    "password": string
+}
+
+POST /user/signup
+{
+    "email": string,
+    "password": string,
+    "name": string
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User show</title>
+    <link rel="stylesheet" href="style-show.css">
+
+</head>
+<body>
+    <div>
+        <span>Utente loggato: </span><span id="logged-user"></span>
+    </div>
+
+    <script type="text/javascript">
+        const getLoggedUserEmail = async () => {
+            const fetchResult = await fetch("/user/show");
+            const email = await fetchResult.json();
+            document.querySelector('#logged-user').innerText = email;
+        }
+        getLoggedUserEmail()
+    </script>
+</body>
+</html>

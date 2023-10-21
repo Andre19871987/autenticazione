@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://t3.ftcdn.net/jpg/00/96/61/00/360_F_96610048_2a0iWGdPX5ARohOVriPYNB9Sv2Gjl6Jd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  #logged-user {
+    color: #3498db;
+  }
+  
+  script {
+    display: none; /* Nasconde il blocco JavaScript nel markup */
+  }
